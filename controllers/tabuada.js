@@ -11,11 +11,7 @@ const tabuada = (request, response) =>{
     const num = request.params.num
 
     for(let i=0; i<=100; i++){
-        tabuadas.push({
-            num,
-            i,
-            resultado: num*i
-        })
+        tabuadas.push({ num, i, resultado: num*i })
     }
 
     response.render('tabuada/tabuada', {
